@@ -1,0 +1,104 @@
+BoxLayout:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 10
+    Widget:
+        size_hint_y: 1
+    BoxLayout:
+        id: box_bitcoin
+        orientation: 'vertical'
+        size_hint_y: None
+        height: 50
+        Button:
+            id: moeda1
+            text: "Bitcoin"
+            background_color: [1, 0, 0, 1]
+            size_hint_y: None
+            height: 50
+            on_press: app.mostrar_cotacao('BTC')
+        Label:
+            id: label_btc
+            text: ''
+            font_size: '20sp'
+            size_hint_y: None
+            height: 0
+            
+    BoxLayout:
+        id: box_ethereum
+        orientation: 'vertical'
+        size_hint_y: None
+        height: 50
+        Button:
+            id: moeda2
+            text: "Ethereum"
+            background_color: [1, 0, 0, 1]
+            size_hint_y: None
+            height: 50
+            on_press: app.mostrar_cotacao('ETH')
+        Label:
+            id: label_eth
+            text: ''
+            font_size: '20sp'
+            size_hint_y: None
+            height: 0
+
+    BoxLayout:
+        id: box_solana
+        orientation: 'vertical'
+        size_hint_y: None
+        height: 50    
+        Button:
+            id: moeda3
+            text: "Solana"
+            background_color: [1, 0, 0, 1]
+            size_hint_y: None
+            height: 50 
+            on_press: app.mostrar_cotacao('SOL')
+        Label:
+            id: label_sol
+            text: ''
+            font_size: '20sp'
+            size_hint_y: None
+            height: 0
+
+    BoxLayout:
+        id: box_xrp
+        orientation: 'vertical'
+        size_hint_y: None
+        height: 50
+        Button:
+            id: moeda4
+            text: "XRP"
+            background_color: [1, 0, 0, 1]
+            size_hint_y: None
+            height: 50
+            on_press: app.mostrar_cotacao('XRP')
+        Label:
+            id: label_xrp
+            text: ''
+            font_size: '20sp'
+            size_hint_y: None
+            height: 0
+
+    BoxLayout:
+        id: box_dogecoin
+        orientation: 'vertical'
+        size_hint_y: None
+        height: 50
+        Button:
+            id: moeda5
+            text: "Dogecoin"
+            background_color: [1, 0, 0, 1]
+            size_hint_y: None
+            height: 50
+            on_press: app.mostrar_cotacao('DOGE')
+        Label:
+            id: label_doge
+            text: ''
+            font_size: '20sp'
+            size_hint_y: None
+            height: 0
+
+    Widget:
+        size_hint_y: 1
+            
